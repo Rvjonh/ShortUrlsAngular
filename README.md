@@ -1,5 +1,7 @@
 # URLShorter
 
+Small application for practicing angular and rxjs: [Live app](https://rvjonh-short-urls.netlify.app/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
 
 ## Development server
