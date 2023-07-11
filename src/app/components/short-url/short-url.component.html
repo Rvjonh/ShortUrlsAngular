@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <app-spinner>
+    <app-spinner *ngIf="processingUrl">
     </app-spinner>
 
     <div *ngIf="isUrlProcessed" class="row mt-4">
