@@ -3,16 +3,16 @@
 
     <div class="row">
         <div class="col-lg-8 mb-2">
-            <input type="text" name="url" id="url" class="form-control form-control-lg" placeholder="Enter a url">
+            <input [(ngModel)]="url" type="text" name="url" id="url" class="form-control form-control-lg" placeholder="Enter a url">
         </div>
         <div class="col-lg-4 mb-2">
-            <button class="w-100 btn btn-primary btn-lg">Create Url</button>
+            <button (click)="handleCreateUrl()" class="w-100 btn btn-primary btn-lg">Create Url</button>
         </div>
     </div>
 
-    <div class="row mt-4">
+    <div *ngIf="isUrlProcessed" class="row mt-4">
         <div class="col-lg-12">
-            <input type="text" name="url-processed" id="url-processed" class="form-control form-control-lg" placeholder="Url created">
+            <input [(ngModel)]="urlProcessed" type="text" name="url-processed" id="url-processed" class="form-control form-control-lg" placeholder="Url created">
         </div>
     </div>
 </div>
